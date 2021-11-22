@@ -2,8 +2,6 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: nginx-deployment
-  labels:
-    component: "worker"
 spec:
     maxReplicas: 6
     minReplicas: 3
